@@ -2,7 +2,7 @@
 
 A 3D printable book scanner copy stand, originally created by [caj on Thingiverse](https://www.thingiverse.com/thing:2466704).
 
-![Book Scanner Preview](images/preview.jpg)
+![Book Scanner Preview](build_photos/13_full_scanner_rig_with_childrens_book.jpg)
 
 ## Description
 
