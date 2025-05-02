@@ -1,5 +1,7 @@
 # Book Merge Software
 
+**Note: This software is designed for Windows operating systems.**
+
 This software is a companion to the Book Scanner Copy Stand created by [caj on Thingiverse](https://www.thingiverse.com/thing:2466704). The software helps merge and organize scanned book pages.
 
 ## Overview
@@ -55,4 +57,4 @@ This software is distributed as freeware per the original creator's permission.
 
 ## Attribution
 
-The Book Merge software was created by caj along with the Book Scanner Copy Stand project. When sharing or using this software, please provide appropriate credit to the original creator.i
+The Book Merge software was created by caj along with the Book Scanner Copy Stand project. When sharing or using this software, please provide appropriate credit to the original creator.

@@ -32,7 +32,7 @@ This repository includes all the original STL files from Thingiverse, organized 
 
 ## Book Merge Software
 
-The repository also includes the Book Merge software created by the original designer. This software helps with:
+The repository also includes the Book Merge software created by the original designer. **Note: This software is designed for Windows operating systems.** This software helps with:
 - Renaming left and right page images
 - Merging left and right pages into a combined view
 - Organizing scanned book pages in the correct order
