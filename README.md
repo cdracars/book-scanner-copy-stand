@@ -15,20 +15,34 @@ The design offers two configuration options:
 ### Two Camera Book Scanner
 - Uses two cameras for faster and more efficient scanning
 - Ideal for larger digitization projects
-- Requires more printed parts and hardware
+- Captures both pages simultaneously
 
 ### Overhead Single Camera Stand
 - Simpler design using a single overhead camera
 - More economical option
 - Requires fewer parts to print
 
-## Files
+## Repository Organization
 
-This repository includes all the original STL files from Thingiverse, organized in a way that makes it easy to identify which parts you need:
+The repository is organized to make it easy to find the files you need based on the configuration you want to build:
 
-- **Original Files**: All original STL files with their exact Thingiverse filenames are in the `models/stl_files/` directory
-- **Configuration-Specific Files**: Files organized by intended use in the `models/single_camera_config/` and `models/two_camera_config/` directories
-- **Documentation**: Comprehensive build guides and hardware specifications
+### 3D Printable Files
+
+- **Common Components**: `models/common_components/` - Parts used in both configurations
+- **Single Camera Configuration**: `models/single_camera_config/` - Parts specific to the single camera setup
+- **Two Camera Configuration**: `models/two_camera_config/` - Parts specific to the two camera setup
+- **Alternative Parts**: `models/common_alternatives/` - Optional parts and variants
+- **Reference Diagrams**: `models/reference_diagrams/` - Assembly diagrams (not for printing)
+
+### Documentation
+
+- **Configuration Guides**:
+  - `config/common_components_setup.md` - Instructions for the shared components
+  - `config/single_camera_setup.md` - Single camera build guide
+  - `config/two_camera_setup.md` - Two camera build guide
+- **Hardware Information**:
+  - `hardware/BOM.md` - Complete bill of materials
+  - `hardware/SOURCING.md` - Guide for sourcing hardware components
 
 ## Book Merge Software
 
@@ -43,7 +57,7 @@ Software documentation can be found in the `software/book_merge/` directory.
 
 - 3D printed parts (STL files in the models directory)
 - Picture frame glass (11x14 size recommended, available at stores like Walmart)
-- Various nuts and bolts (see [BOM.md](hardware/BOM.md) for detailed list)
+- Various nuts and bolts (see [BOM.md](hardware/BOM.md) for detailed list and [SOURCING.md](hardware/SOURCING.md) for where to buy)
 - Camera (DSLR, GoPro, or other camera with suitable resolution)
 
 ## Assembly

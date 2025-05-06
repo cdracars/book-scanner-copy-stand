@@ -38,7 +38,16 @@ Choose the configuration that best suits your needs based on your available equi
 ## Required Parts
 
 ### 3D Printed Parts
-Refer to [BOM.md](hardware/BOM.md) for a complete list of parts to print for your chosen configuration.
+Refer to the following files for a complete list of parts to print for your chosen configuration:
+- Common components for all builds: [common_components_setup.md](config/common_components_setup.md)
+- Single camera configuration: [single_camera_setup.md](config/single_camera_setup.md)
+- Two camera configuration: [two_camera_setup.md](config/two_camera_setup.md)
+
+The STL files are organized in the following directories:
+- `models/common_components/` - Parts used in both configurations
+- `models/single_camera_config/` - Parts specific to the single camera setup
+- `models/two_camera_config/` - Parts specific to the two camera setup
+- `models/common_alternatives/` - Optional parts and variants
 
 ### Hardware
 - Picture frame glass (11x14 inch recommended)
@@ -46,41 +55,57 @@ Refer to [BOM.md](hardware/BOM.md) for a complete list of parts to print for you
   - Most standard picture frames use the same thickness of glass
   - Avoid the largest frames as they typically have thicker glass
 - Nuts and bolts (see detailed list in [BOM.md](hardware/BOM.md))
+- For sourcing hardware components, see [SOURCING.md](hardware/SOURCING.md)
 
 ## Assembly Steps
 
-### Two Camera Configuration
+### Common Components (For All Configurations)
 
-1. Print all required parts for the two camera configuration
+1. Print all required common components from `models/common_components/`
 2. Assemble the book stand frame:
    - Connect the right and left book stand parts using 50mm × 0.5mm screws and bolts (4 total)
+3. Prepare the glass frame:
+   - Use the glass frame connectors and edging pieces to create a frame for the glass
+   - Insert the picture frame glass into the assembled frame
+
+### Two Camera Configuration
+
+1. Print all required parts for the two camera configuration from `models/two_camera_config/`
+2. Assemble the common components as described above
 3. Attach the connecting bars:
    - Use 20mm × 0.5mm screws and bolts (8 total) to connect the bars and adjustable base to stand base
 4. Assemble the camera mount:
    - Connect the tops to extensions using 2 inch × 1/2 inch nuts and bolts (2 total)
    - Attach cameras to the top arms using 1/2 inch × 1/2 inch nuts and washers (2 total)
-5. Put the glass frame together:
-   - Use the glass frame connectors and edging pieces to create a frame for the glass
-   - Insert the picture frame glass into the assembled frame
 
 ### Single Camera Configuration
 
-1. Print all required parts for the single camera configuration
-2. Attach the stand base to the base support using 20mm × 0.5mm nuts and bolts (4 total)
-3. Mount the extension using a 2 inch × 1/2 inch nut and bolt
-4. Attach the camera to the one camera top arm using a 1/2 inch × 1/2 inch screw
-5. If using a webcam instead of a camera, add the optional webcam adapter
+1. Print all required parts for the single camera configuration from `models/single_camera_config/`
+2. Assemble the common components as described above
+3. Attach the stand base to the base support using 20mm × 0.5mm nuts and bolts (4 total)
+4. Mount the extension using a 2 inch × 1/2 inch nut and bolt
+5. Attach the camera to the single camera top arm using a 1/2 inch × 1/2 inch screw
+6. If using a webcam instead of a camera, add the optional webcam adapter
 
 ## Using the Book Scanner
 
 1. Place a book open on the glass surface
 2. Position the camera(s) to capture clear images of the book pages
 3. Take photos of each page spread
-4. Use any image processing software of your choice to process the scanned pages
+4. Use the Book Merge software (in the `software/book_merge/` directory) or any image processing software of your choice to process the scanned pages
 
-## Additional Notes
+## Alternative Parts
 
-The original creator mentions that this setup can handle a full-size DSLR and recommends 4K cameras like GoPro for scanning due to their high resolution.
+The repository includes some optional alternative parts in `models/common_alternatives/`:
+- `half_extension.stl` - A shorter extension for smaller books or height-restricted areas
+- `half_top_no_overhang.stl` - An alternative top piece for different camera positioning
+- `dslr_webcam_adapter.stl` - An adapter specifically for DSLR cameras
+
+These parts are optional and can be used with either configuration when you need specific modifications.
+
+## Reference Diagrams
+
+For help with assembly, refer to the complete diagram models in the `models/reference_diagrams/` directory. These files provide visual references for how all parts fit together but are not meant to be printed.
 
 ## Troubleshooting
 
